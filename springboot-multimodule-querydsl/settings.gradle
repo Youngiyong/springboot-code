@@ -1,0 +1,4 @@
+rootProject.name = 'springboot-multimodule-querydsl'
+include 'api'
+include 'domain'
+
