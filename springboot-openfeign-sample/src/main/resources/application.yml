@@ -1,0 +1,36 @@
+server:
+  port: 8081
+
+#feign fallback 을 위한 설정
+feign:
+  hystrix:
+    enabled: true
+
+
+#config server 세팅
+spring:
+  config:
+    import: optional:configserver:http://localhost:8999
+  cloud:
+    config:
+      name: apiConfig
+      profile: dev
+  rabbitmq:
+    host: 8.8.8.8
+    port: 5672
+    username: test
+    password: 1234
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: busrefresh
+
+test:
+  api:
+    url: www.test.com
+
+#config server rsa
+encrypt:
+  key: dtestkey
