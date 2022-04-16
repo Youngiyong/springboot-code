@@ -1,4 +1,0 @@
-rootProject.name = 'user-api'
-include 'cheese-core'
-include 'cheese-domain'
-
