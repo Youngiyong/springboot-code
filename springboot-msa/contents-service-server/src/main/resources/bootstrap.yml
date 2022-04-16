@@ -1,0 +1,22 @@
+# contents-service bootstrap.yml
+server:
+  port: 8081
+spring:
+  profiles:
+    active: local
+  application:
+    name: contents-service
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: qwe123!@#
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, refresh

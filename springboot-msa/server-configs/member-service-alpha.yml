@@ -1,0 +1,6 @@
+spring:
+  profiles: alpha
+  message: Modify Hello Spring MemberService Alpha Server!!!!!
+
+user:
+  password: '{cipher}AQByU8EisJnDjzg8JAKmGJX1qxaus9lzva6jSSOCEjY3zSNAUd9nSEnRGa52JHoIZgaaoPT/Z7/jlA8PcoWbup8xiKrAU887byh+94wULETUob7rEA6lyZ26ni4BflEJhp5UjZtH3kyrhfzzhXBr7vpaDxNvdXW9VByibhzerBasdVdpDKMWsg8jkqXe1e0oC9PiD/+GpSv9BchhlYbxCU/mHzQNYbEkJR+l2uPPMjuaSBj91w5uQfJftcXAmhKdRZs3bDQAhw8BFEKHaV5/tLHyCUJI6kjVPH+0Y9gTilVm0kbh8Gqn/VtPuf1RVCmqnQYghM3TnucOiZrwV/7T8IiOPtQ66ghDjVbjLzTd9WUnxMAHv78gIZdY2QLqHHAR0ic='

@@ -1,0 +1,14 @@
+# member-service, contents-service bootstrap-local.yml
+spring:
+  profiles: local
+  cloud:
+    config:
+      uri: http://localhost:9000
+      fail-fast: true
+
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    instance:
+      preferIpAddress: true

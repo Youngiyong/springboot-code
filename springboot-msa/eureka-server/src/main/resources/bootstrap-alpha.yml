@@ -1,0 +1,3 @@
+# bootstrap-alpha.yml
+spring:
+  profiles: alpha

@@ -1,0 +1,14 @@
+# bootstrap.yml
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-discovery
+  profiles:
+    active: local
+
+eureka:
+  client:
+    registerWithEurek: true
+    fetchRegistry: false

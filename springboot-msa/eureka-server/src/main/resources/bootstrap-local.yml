@@ -1,0 +1,3 @@
+# bootstrap-local.yml
+spring:
+  profiles: local

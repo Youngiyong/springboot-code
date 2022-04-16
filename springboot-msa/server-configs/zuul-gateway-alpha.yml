@@ -1,0 +1,18 @@
+# zuul-gateway-local.yml
+spring:
+  profiles: alpha
+# 변경 후 zuul-gateway-local.yml
+zuul:
+  routes:
+    member:
+      stripPrefix: false
+      path: /v1/member/**
+      serviceId: member-service
+    pay:
+      stripPrefix: false
+      path: /v1/pay/**
+      serviceId: contents-service
+    else:
+      stripPrefix: false
+      path: /v1/**
+      serviceId: contents-service

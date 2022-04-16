@@ -1,0 +1,5 @@
+# contents-service-alpha.yml
+spring:
+  profiles: alpha
+  message: Modify Hello Spring ContentsService Alpha Server!!!!!
+

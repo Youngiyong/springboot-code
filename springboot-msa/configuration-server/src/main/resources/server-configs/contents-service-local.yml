@@ -1,0 +1,4 @@
+# contents-service-local.yml
+spring:
+  profiles: local
+  message: Hello Spring ContentsService Local Server!!!!!
