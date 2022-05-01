@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://ec2.com:3306/test?useSSL=false
+    url: jdbc:mysql://localhost.com:3306/test?useSSL=false
     username: root
     password: qwe123!@#
     hikari:
