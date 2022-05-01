@@ -28,6 +28,6 @@ spring:
         default-page-size: 10
         one-indexed-parameters: true
 es:
-  host: https://search-test-adsadsaad.ap-northeast-2.es.amazonaws.com:443
+  host: https://search-test-adsadsaa1231312d.ap-northeast-2.es.amazonaws.com:443
   username: admin
   password: qwe123!@#
