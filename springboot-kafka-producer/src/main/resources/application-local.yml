@@ -1,0 +1,34 @@
+server:
+  port: 8000
+  name: basic-local
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: admin
+    password: qwe123!@#
+    hikari:
+      maximum-pool-size: 2
+  config:
+    activate:
+      on-profile: local
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        default_batch_fetch_size: 100
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace

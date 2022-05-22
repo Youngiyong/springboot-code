@@ -1,0 +1,50 @@
+server:
+  port: 8082
+  name: producer-dev
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: admin
+    password: qwe123!@#
+    hikari:
+      maximum-pool-size: 5
+  config:
+    activate:
+      on-profile: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        default_batch_fetch_size: 100
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+
+
+naver:
+  api:
+    access-key: test
+    secret-key: secrest
+  sms:
+    url: https://sens.apigw.ntruss.com
+
+fcm:
+  url: https://fcm.googleapis.com/fcm/send
+  key: test
