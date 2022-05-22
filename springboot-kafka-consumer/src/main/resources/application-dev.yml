@@ -1,0 +1,53 @@
+server:
+  port: 8083
+  name: consumer-dev
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: admin
+    password: qwe123!@#
+    hikari:
+      maximum-pool-size: 5
+  config:
+    activate:
+      on-profile: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        default_batch_fetch_size: 100
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: tsid-sns
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+
+
+naver:
+  api:
+    access-key: accessKey
+    secret-key: secretKey
+  sms:
+    url: https://sens.apigw.ntruss.com
+
+fcm:
+  url: https://fcm.googleapis.com/fcm/send
+  key: fcmKey

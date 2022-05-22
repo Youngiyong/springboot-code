@@ -1,0 +1,10 @@
+server:
+  port: 8083
+  name: consumer-prod
+
+
+
+spring:
+  config:
+    activate:
+      on-profile: prod
