@@ -12,7 +12,7 @@ public enum ErrorCode {
 
     SIGNUP(200, "B2001"),
     UPDATE(200, "B2002"),
-
+    SMS_SEND_FAIL(200, "B2003"),
     //400
     INVALID_PARAMETER(400, "B4000"),
 
