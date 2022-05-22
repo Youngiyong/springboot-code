@@ -15,19 +15,15 @@
 ### Topic Create
 ```
 1. shell access
-
 docker exec -it kafka /bin/bash
 
 2. create topic 
-
 kafka-topics.sh --create --bootstrap-server localhost:9092 --topic test
 kafka-topics.sh --create --bootstrap-server localhost:9092 --topic sms
 
 3. topic list 
-
-$ kafka-topics.sh --list --bootstrap-server localhost:9092
+kafka-topics.sh --list --bootstrap-server localhost:9092
 test
 sms
-
 ```
 
