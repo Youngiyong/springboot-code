@@ -1,6 +1,6 @@
-package com.kafka.producer.domain.converter;
+package com.kafka.consumer.domain.converter;
 
-import com.kafka.producer.domain.enums.EUserGradeFlag;
+import com.kafka.consumer.domain.enums.EUserGradeFlag;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

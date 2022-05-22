@@ -1,6 +1,6 @@
 server:
-  port: 8000
-  name: basic-local
+  port: 8082
+  name: producer-local
 
 spring:
   datasource:

@@ -1,4 +1,4 @@
-package com.kafka.producer.config;
+package com.kafka.consumer.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,14 +26,14 @@ public class SwaggerConfig {
                 .securityContexts(Arrays.asList(securityContext()))
                 .securitySchemes(Arrays.asList(apiKey()))
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.kafka.producer"))
+                .apis(RequestHandlerSelectors.basePackage("com.kafka.consumer"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfo("Kafka Producer Sample API",
-                "\"Kafka Test Sample API.",
+        return new ApiInfo("Basic Server API",
+                "\"Basic Serve API.",
                 "1.0",
                 "Terms of service",
                 new Contact("eddy", "youn9354@naver.com", "youn9354@naver.com"),

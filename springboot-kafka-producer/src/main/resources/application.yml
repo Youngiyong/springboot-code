@@ -1,7 +1,6 @@
 server:
-  port: 8000
-  name: basic-prod
-
+  port: 8082
+  name: producer-prod
 
 spring:
   config:

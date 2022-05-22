@@ -1,7 +1,7 @@
-package com.kafka.producer.domain.enums;
+package com.kafka.consumer.domain.enums;
 
-import com.kafka.producer.exception.ErrorCode;
-import com.kafka.producer.exception.ServerException;
+import com.kafka.consumer.exception.ErrorCode;
+import com.kafka.consumer.exception.ServerException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

@@ -36,15 +36,3 @@ logging:
         type:
           descriptor:
             sql: trace
-
-
-naver:
-  api:
-    access-key: test
-    secret-key: secrest
-  sms:
-    url: https://sens.apigw.ntruss.com
-
-fcm:
-  url: https://fcm.googleapis.com/fcm/send
-  key: test

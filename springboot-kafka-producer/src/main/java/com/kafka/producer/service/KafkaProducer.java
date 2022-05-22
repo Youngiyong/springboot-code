@@ -10,14 +10,21 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class KafkaProducer {
 
-    private static final String TOPIC = "sns";
+    private static final String TOPIC = "sms";
+    private static final String TOPIC_TEST = "test";
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 
-    public void sendMessage(SmsRequest.SmsRegular request){
+    public void sendSmsMessage(SmsRequest.SmsRegular request){
         JSONObject jobj = new JSONObject();
         jobj.put("smsType", request.getSmsType().name());
         jobj.put("userTel", request.getUserTel());
         this.kafkaTemplate.send(TOPIC, jobj.toJSONString());
+    }
+
+    public void sendTestTopicMessage(){
+        JSONObject jobj = new JSONObject();
+        jobj.put("test", "hi");
+        this.kafkaTemplate.send(TOPIC_TEST, jobj.toJSONString());
     }
 }
